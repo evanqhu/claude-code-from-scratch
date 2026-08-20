@@ -4,6 +4,7 @@ dist-test/
 .env
 __pycache__/
 steps/dist/
+.zcode/
 
 # mini-claude demo artifacts (sessions/memory/skills the steps demos create)
 .mini-session.json

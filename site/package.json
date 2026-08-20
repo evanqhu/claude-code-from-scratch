@@ -1,0 +1,34 @@
+{
+  "name": "mini-claude-learning-site",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Interactive chapter-by-chapter source-code learning site for claude-code-from-scratch (TS only)",
+  "scripts": {
+    "dev": "vinext dev",
+    "build": "vinext build",
+    "preview": "vinext start",
+    "deploy:cloudflare": "npm run build && wrangler deploy"
+  },
+  "dependencies": {
+    "mermaid": "^11.16.1",
+    "react": "19.2.6",
+    "react-dom": "19.2.6",
+    "react-markdown": "^9.0.1",
+    "remark-gfm": "^4.0.0",
+    "shiki": "^1.22.0"
+  },
+  "devDependencies": {
+    "@cloudflare/vite-plugin": "1.37.1",
+    "@openai/sites-vite-plugin": "0.1.0",
+    "@types/node": "22.19.19",
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
+    "@vitejs/plugin-rsc": "0.5.26",
+    "react-server-dom-webpack": "19.2.6",
+    "typescript": "5.9.3",
+    "vinext": "1.0.0-beta.2",
+    "vite": "8.0.13",
+    "wrangler": "4.92.0"
+  }
+}

@@ -29,7 +29,11 @@
     "steps:docs": "node steps/docs-sync.mjs",
     "steps:docs:check": "node steps/docs-sync.mjs --check",
     "steps:ci": "node steps/lint-markers.mjs && node steps/mock-anthropic.selftest.mjs && .venv/bin/python steps/mock_anthropic.selftest.py && node steps/test.mjs && node steps/test.selfcheck.mjs && node steps/docs-sync.mjs --check",
-    "test:live": "tsc && node --test test/integration/*.livetest.mjs"
+    "test:live": "tsc && node --test test/integration/*.livetest.mjs",
+    "site:data": "node site/scripts/build-data.mjs",
+    "site:dev": "node site/scripts/build-data.mjs && cd site && npm run dev",
+    "site:build": "node site/scripts/build-data.mjs && cd site && npm run build",
+    "site:preview": "cd site && npm run preview"
   },
   "keywords": [
     "claude-code",
