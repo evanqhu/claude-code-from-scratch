@@ -2,6 +2,9 @@
 // A tiny stdio MCP server used by the ch12 demo/tests (a fixture, like the mock
 // model). It speaks line-delimited JSON-RPC over stdin/stdout and offers one
 // tool, "add". Any real MCP server the reader plugs in works the same way.
+// 一个极简的 stdio MCP 服务器，供第 12 章的 demo/测试使用（和 mock 模型一样，属于测试夹具）。
+// 它通过 stdin/stdout 按行收发 JSON-RPC 消息，只提供 "add" 一个工具。
+// 读者想换成任意真实 MCP 服务器，接入方式都是一样的。
 import { createInterface } from "readline";
 
 const rl = createInterface({ input: process.stdin });
